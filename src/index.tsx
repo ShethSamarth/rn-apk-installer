@@ -17,6 +17,19 @@ const ApkInstaller =
     }
   );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return ApkInstaller.multiply(a, b);
-}
+export const installApk = (filePath: string): void => {
+  if (Platform.OS !== 'android') {
+    throw new Error('ApkInstaller is only available on Android');
+  }
+
+  if (!filePath || typeof filePath !== 'string') {
+    throw new Error('A valid APK file path must be provided');
+  }
+
+  try {
+    ApkInstaller.installApk(filePath);
+  } catch (error) {
+    console.error('Failed to install APK:', error);
+    throw error;
+  }
+};
