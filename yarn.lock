@@ -5591,7 +5591,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"escape-string-regexp@npm:5.0.0":
+"escape-string-regexp@npm:5.0.0, escape-string-regexp@npm:^5.0.0":
   version: 5.0.0
   resolution: "escape-string-regexp@npm:5.0.0"
   checksum: 20daabe197f3cb198ec28546deebcf24b3dbb1a5a269184381b3116d12f0532e06007f4bc8da25669d6a7f8efb68db0758df4cd981f57bc5b57f521a3e12c59e
@@ -5703,8 +5703,8 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-prettier@npm:^5.2.3":
-  version: 5.2.6
-  resolution: "eslint-plugin-prettier@npm:5.2.6"
+  version: 5.3.1
+  resolution: "eslint-plugin-prettier@npm:5.3.1"
   dependencies:
     prettier-linter-helpers: ^1.0.0
     synckit: ^0.11.0
@@ -5718,7 +5718,7 @@ __metadata:
       optional: true
     eslint-config-prettier:
       optional: true
-  checksum: 2626c123916c4afe88d423bac9c3644d30af8beac4963b77bf447f42ba75ab592076716dfa9d43333bfde0ac482d8f8b6a49699403d128aee5effd609ca54bec
+  checksum: 2ac5e617b143050cb559a20628823aa4ffa7a31ba733c299fbb76c697985c3d2f164eda9729678b2303ab38529cfd1c80497806f883f4a4752cb6be1422583eb
   languageName: node
   linkType: hard
 
@@ -6107,7 +6107,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.9, fast-glob@npm:^3.3.0, fast-glob@npm:^3.3.2":
+"fast-glob@npm:^3.2.9, fast-glob@npm:^3.3.0, fast-glob@npm:^3.3.2, fast-glob@npm:^3.3.3":
   version: 3.3.3
   resolution: "fast-glob@npm:3.3.3"
   dependencies:
@@ -10723,9 +10723,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-builder-bob@npm:^0.40.7":
-  version: 0.40.7
-  resolution: "react-native-builder-bob@npm:0.40.7"
+"react-native-builder-bob@npm:^0.40.9":
+  version: 0.40.9
+  resolution: "react-native-builder-bob@npm:0.40.9"
   dependencies:
     "@babel/core": ^7.25.2
     "@babel/plugin-transform-flow-strip-types": ^7.26.5
@@ -10747,11 +10747,22 @@ __metadata:
     kleur: ^4.1.4
     metro-config: ^0.80.9
     prompts: ^2.4.2
+    react-native-monorepo-config: ^0.1.8
     which: ^2.0.2
     yargs: ^17.5.1
   bin:
     bob: bin/bob
-  checksum: 799a6903f2658839e3c3a1be28401efe3a8ad71110962f29e9dd3bdffdae635b2f83d9589c454d7e1340461f94ca48d343c2cf01b6bbc718b11a4790bae73ab9
+  checksum: 42099af2ddbda072d348a65845b54c223999cf78d8b8cd290c8e9964d2be513182024100d8a9d82084a88f79f9283e70066e2e0daf26383704a6889097ec5f84
+  languageName: node
+  linkType: hard
+
+"react-native-monorepo-config@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "react-native-monorepo-config@npm:0.1.8"
+  dependencies:
+    escape-string-regexp: ^5.0.0
+    fast-glob: ^3.3.3
+  checksum: 3c9abfd2dcd7d4da0d5d8d59f1e997f68283a6dc04935c310fece2a6ab62045e2b19f976d27894243f1cba6d9b9f1c3771e9f1428cd7cb0f7e00ed9c1e7251a5
   languageName: node
   linkType: hard
 
@@ -11248,7 +11259,7 @@ __metadata:
     "@types/react": ^19.0.0
     react: 19.0.0
     react-native: 0.78.2
-    react-native-builder-bob: ^0.40.7
+    react-native-builder-bob: ^0.40.9
   languageName: unknown
   linkType: soft
 
@@ -11274,7 +11285,7 @@ __metadata:
     prettier: ^3.0.3
     react: 19.0.0
     react-native: 0.78.2
-    react-native-builder-bob: ^0.40.7
+    react-native-builder-bob: ^0.40.9
     release-it: ^17.10.0
     turbo: ^1.10.7
     typescript: ^5.2.2
@@ -13147,8 +13158,8 @@ __metadata:
   linkType: hard
 
 "zod@npm:^3.23.8, zod@npm:^3.24.2":
-  version: 3.24.3
-  resolution: "zod@npm:3.24.3"
-  checksum: 9c3976e61cec25908f3405502abdf28ab1893afd5182c6739a30375c5c6bf4b9b6ea7e78735324e5ac63571c160ce607ebe320ff389b044223c357ccc2f8c94c
+  version: 3.24.4
+  resolution: "zod@npm:3.24.4"
+  checksum: 62829789765a9187bd72bed3972a7c1a39fdfe6c59bc752eedabec5f99af701658471b8577d22e0fee2081e6e35d4efc93c02c90e13350755a36feadbf72bbbc
   languageName: node
   linkType: hard

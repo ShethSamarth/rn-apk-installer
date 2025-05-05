@@ -1,4 +1,4 @@
-package com.apkinstaller
+package com.rnapkinstaller
 
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule
@@ -6,9 +6,9 @@ import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ViewManager
 
 
-class ApkInstallerPackage : ReactPackage {
+class RnApkInstallerPackage : ReactPackage {
   override fun createNativeModules(reactContext: ReactApplicationContext): List<NativeModule> {
-    return listOf(ApkInstallerModule(reactContext))
+    return listOf(RnApkInstallerModule(reactContext))
   }
 
   override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {

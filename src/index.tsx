@@ -6,16 +6,16 @@ const LINKING_ERROR =
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const ApkInstaller =
-  NativeModules.ApkInstaller ??
-  new Proxy(
-    {},
-    {
-      get() {
-        throw new Error(LINKING_ERROR);
-      },
-    }
-  );
+const RnApkInstaller = NativeModules.RnApkInstaller
+  ? NativeModules.RnApkInstaller
+  : new Proxy(
+      {},
+      {
+        get() {
+          throw new Error(LINKING_ERROR);
+        },
+      }
+    );
 
 export const installApk = (filePath: string): void => {
   if (Platform.OS !== 'android') {
@@ -27,7 +27,7 @@ export const installApk = (filePath: string): void => {
   }
 
   try {
-    ApkInstaller.installApk(filePath);
+    RnApkInstaller.installApk(filePath);
   } catch (error) {
     console.error('Failed to install APK:', error);
     throw error;

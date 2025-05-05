@@ -1,4 +1,4 @@
-package com.apkinstaller
+package com.rnapkinstaller
 
 import android.content.Intent
 import android.net.Uri
@@ -10,7 +10,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
 import java.io.File
 
-class ApkInstallerModule(reactContext: ReactApplicationContext) :
+class RnApkInstallerModule(reactContext: ReactApplicationContext) :
   ReactContextBaseJavaModule(reactContext) {
 
   override fun getName(): String {
@@ -42,6 +42,6 @@ class ApkInstallerModule(reactContext: ReactApplicationContext) :
   }
 
   companion object {
-    const val NAME = "ApkInstaller"
+    const val NAME = "RnApkInstaller"
   }
 }
