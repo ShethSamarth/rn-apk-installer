@@ -3980,6 +3980,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"base-64@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "base-64@npm:0.1.0"
+  checksum: 5a42938f82372ab5392cbacc85a5a78115cbbd9dbef9f7540fa47d78763a3a8bd7d598475f0d92341f66285afd377509851a9bb5c67bbecb89686e9255d5b3eb
+  languageName: node
+  linkType: hard
+
 "base64-js@npm:^1.3.1, base64-js@npm:^1.5.1":
   version: 1.5.1
   resolution: "base64-js@npm:1.5.1"
@@ -10756,6 +10763,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-fs@npm:2.20.0":
+  version: 2.20.0
+  resolution: "react-native-fs@npm:2.20.0"
+  dependencies:
+    base-64: ^0.1.0
+    utf8: ^3.0.0
+  peerDependencies:
+    react-native: "*"
+    react-native-windows: "*"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: 0be9bb9a5c13b501d0a3006efc3aa5c0b5b211456ee04718297f4e522532f3527f1daa220bd67d3b82d819ed8fdab8f64b7d6e0d7b768c1fd1d8ec9122d94316
+  languageName: node
+  linkType: hard
+
 "react-native-monorepo-config@npm:^0.1.8":
   version: 0.1.8
   resolution: "react-native-monorepo-config@npm:0.1.8"
@@ -10763,6 +10786,20 @@ __metadata:
     escape-string-regexp: ^5.0.0
     fast-glob: ^3.3.3
   checksum: 3c9abfd2dcd7d4da0d5d8d59f1e997f68283a6dc04935c310fece2a6ab62045e2b19f976d27894243f1cba6d9b9f1c3771e9f1428cd7cb0f7e00ed9c1e7251a5
+  languageName: node
+  linkType: hard
+
+"react-native-permissions@npm:5.4.0":
+  version: 5.4.0
+  resolution: "react-native-permissions@npm:5.4.0"
+  peerDependencies:
+    react: ">=18.1.0"
+    react-native: ">=0.70.0"
+    react-native-windows: ">=0.70.0"
+  peerDependenciesMeta:
+    react-native-windows:
+      optional: true
+  checksum: 6ce47a687acc139da6b9d8b35bbcca021c1a499be17a167cae1d165082460b15e16dd7d5f7fafa25f5400d493e9b5e57c84d458ae3c70974deb4b6cbcbeec327
   languageName: node
   linkType: hard
 
@@ -11260,6 +11297,8 @@ __metadata:
     react: 19.0.0
     react-native: 0.78.2
     react-native-builder-bob: ^0.40.9
+    react-native-fs: 2.20.0
+    react-native-permissions: 5.4.0
   languageName: unknown
   linkType: soft
 
@@ -12703,6 +12742,13 @@ __metadata:
   version: 5.0.0
   resolution: "url-join@npm:5.0.0"
   checksum: 5921384a8ad4395b49ce4b50aa26efbc429cebe0bc8b3660ad693dd12fd859747b5369be0443e60e53a7850b2bc9d7d0687bcb94386662b40e743596bbf38101
+  languageName: node
+  linkType: hard
+
+"utf8@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "utf8@npm:3.0.0"
+  checksum: cb89a69ad9ab393e3eae9b25305b3ff08bebca9adc839191a34f90777eb2942f86a96369d2839925fea58f8f722f7e27031d697f10f5f39690f8c5047303e62d
   languageName: node
   linkType: hard
 
