@@ -37,7 +37,7 @@ Add this inside `<application>` in your `AndroidManifest.xml`:
 ```xml
 <provider
   android:name="androidx.core.content.FileProvider"
-  android:authorities="${applicationId}.fileprovider"
+  android:authorities="${applicationId}.provider"
   android:exported="false"
   android:grantUriPermissions="true">
   <meta-data
@@ -84,4 +84,4 @@ To install APKs outside the Play Store, users must enable "Install from Unknown 
 
 ## 🧪 Example
 
-You can find a working example in the `example` folder.
+You can find a working example in the [example](https://github.com/ShethSamarth/rn-apk-installer/tree/main/example) folder.
